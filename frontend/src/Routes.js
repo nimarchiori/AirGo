@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import Contato from "./Pages/Contato";
 import Cadastro from "./Pages/Cadastro";
 import TabelaUsuarios from "./Pages/ListaUsuarios";
+import Voos from "./Pages/Voos";
+
 
 const Rotas = () => {
   return (
@@ -13,6 +15,7 @@ const Rotas = () => {
         <Route path="/contato" element={<Contato />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/listaUsuarios" element={<TabelaUsuarios />} />
+        <Route path="/Voos" element={<Voos/>} />
       </Routes>
     </>
   );
