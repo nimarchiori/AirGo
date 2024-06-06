@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import "../CSS/Voos.css";
+import "../css/Voos.css";
 
 const Voos = () => {
     return ( 
