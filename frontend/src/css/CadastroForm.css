@@ -1,0 +1,39 @@
+/* Estilo para o contêiner do formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 12% solid #dc0808;
+    border-radius: 5px;
+    background-color: #c5c5c575;
+  }
+  
+  /* Estilo para os campos do formulário */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para o botão de envio */
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #646464;
+   
+  }
+  

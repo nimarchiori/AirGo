@@ -1,10 +1,10 @@
 import React from "react";
-import {Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Contato from "./Pages/Contato";
 import Cadastro from "./Pages/Cadastro";
 import TabelaUsuarios from "./Pages/ListaUsuarios";
-
+import Login from "./Pages/Login"
 const Rotas = () => {
   return (
     <>
@@ -13,6 +13,7 @@ const Rotas = () => {
         <Route path="/contato" element={<Contato />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/listaUsuarios" element={<TabelaUsuarios />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );

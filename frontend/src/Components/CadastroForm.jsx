@@ -1,6 +1,7 @@
 // CadastroForm.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../css/CadastroForm.css'; // Opcional: se quiser estilizar com CSS
 
 const CadastroForm = () => {
   const [formData, setFormData] = useState({

@@ -16,6 +16,10 @@ const Header = () => {
             <Link to="/cadastro">Cadastro</Link>
           </li>
           <li>
+            <Link to="/login">Login</Link>
+          </li>
+
+          <li>
             <Link to="/listaUsuarios">Lista de Usuários</Link>
           </li>
         </ul>
