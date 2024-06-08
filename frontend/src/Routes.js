@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Contato from "./Pages/Contato";
 import Cadastro from "./Pages/Cadastro";
 import TabelaUsuarios from "./Pages/ListaUsuarios";
-import Login from "./Pages/Login"
+import Login from "./Pages/Login";
 import Voos from "./Pages/Voos";
 
 
@@ -18,6 +18,7 @@ const Rotas = () => {
         <Route path="/listaUsuarios" element={<TabelaUsuarios />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Voos" element={<Voos/>} />
+        
 
       </Routes>
     </>
