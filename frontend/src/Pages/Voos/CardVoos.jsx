@@ -1,5 +1,4 @@
-import React from 'react';
-import '../css/Card1Viagens.css'
+import React from "react";
 
 const ProductCard = ({ imageUrl, altText, title, description, price }) => (
   <section className="card">
@@ -31,7 +30,7 @@ const ProductCard = ({ imageUrl, altText, title, description, price }) => (
   </section>
 );
 
-const App = () => (
+const CardVoos = () => (
   <main className="container">
     <ProductCard
       imageUrl="https://i.ibb.co/cNWqxGx/red.png"
@@ -50,4 +49,4 @@ const App = () => (
   </main>
 );
 
-export default App;
+export default CardVoos;

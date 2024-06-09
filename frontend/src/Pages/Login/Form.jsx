@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const LoginForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+const Form = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // Aqui você pode adicionar a lógica para autenticar o usuário
-    console.log('Usuário:', username);
-    console.log('Senha:', password);
+    console.log("Usuário:", username);
+    console.log("Senha:", password);
   };
 
   return (
@@ -37,4 +37,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Form;
