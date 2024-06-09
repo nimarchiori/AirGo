@@ -66,32 +66,32 @@ function Home() {
 
   return (
     <div className="h-screen w-screen">
-      <div className="w-full h-3/6 bg-yellow-400 grid grid-rows-3 grid-flow-col gap-3 place-content-center flex">
-        <div className="grid grid-rows-2 gap-2 w-full md:w-3/4 lg:w-1/2 mt-3">
+      <div className="w-full h-3/6 bg-yellow-400 grid grid-rows-3 grid-flow-col gap-3 place-content-center flex py-6">
+        <div className="w-full md:w-3/4 lg:w-1/2 h-5/2">
           <h1 className="text-4xl font-extrabold text-balance">
             <span className="text-blue-800 text-wrap">Economize</span> muito com
             as melhores ofertas de viagens
           </h1>
-          <div className="h-2/6 w-full text-nowrap grid grid-cols-1 md:grid-cols-2 gap-2 font-semibold mt-3">
-            <button className="bg-blue-900 text-white rounded-2xl h-5/6 text-sm p-2">
-              Aéreo + Hotel
-            </button>
-            <button className="text-blue-900 border border-blue-900 rounded-2xl h-5/6 text-sm">
-              Pacote completo
-            </button>
-          </div>
         </div>
-        <div className="grid grid-cols-3 gap-3 w-full h-full">
-          <div className="w-full h-1/2 flex justify-center">
+        <div className="mt-3 h-2/6 w-2/6 text-nowrap grid grid-cols-1 md:grid-cols-2 gap-2 font-semibold">
+          <button className="bg-blue-900 text-white rounded-2xl h-5/6 text-sm p-2">
+            Aéreo + Hotel
+          </button>
+          <button className="text-blue-900 border border-blue-900 rounded-2xl h-5/6 text-sm">
+            Pacote completo
+          </button>
+        </div>
+        <div className="grid grid-cols-3 w-full h-5/6 relative">
+          <div className="absolute h-full w-2/4 flex justify-content-center grid grid-cols-2 gap-3">
             {inputClicado ? (
-              <div>
-                <div className="h-full w-full flex items-center relative">
+              <div className="mr-3 h-full">
+                <div className="h-4/6 w-full flex items-center relative">
                   <FaSearch className="text-gray-400 left-1 absolute" />
                   <input
                     ref={inputRef}
                     type="text"
                     placeholder={mensagem}
-                    className="py-3 pl-6 pr-3 focus:outline-none w-80 md:w-96 h-5/6 bg-white rounded-lg"
+                    className="py-3 pr-3 focus:outline-none bg-white rounded-lg"
                   />
                   <IoClose
                     onClick={locateClose}
@@ -101,29 +101,27 @@ function Home() {
                 </div>
               </div>
             ) : (
-              <div className="w-full h-full relative" onClick={handleBoxClick}>
-                <div className="pl-3 grid grid-cols-3 gap-2 text-nowrap bg-white rounded-lg w-80 md:w-96 h-5/6">
+              <div className="h-full w-full" onClick={handleBoxClick}>
+                <div className="pl-5 grid grid-cols-4 gap-2 text-nowrap bg-white rounded-lg h-4/6 relative">
                   <div className="flex flex-col items-center justify-center">
-                    <h1 className="font-black text-xl">Origem</h1>
-                    <p className="text-sm text-gray-500">
+                    <h1 className="font-black text-sm">Origem</h1>
+                    <p className="text-xs text-gray-500">
                       De onde você vai sair?
                     </p>
                   </div>
                   <div className="flex items-center justify-center">
-                    <div className="bg-blue-900 text-white rounded-xl w-12 h-12 flex items-center justify-center">
+                    <div className="bg-blue-900 text-white rounded-xl w-1/2 h-2/6 flex items-center justify-center">
                       <FaArrowsRotate />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center">
-                    <h1 className="font-black text-xl">Destino</h1>
-                    <p className="text-sm text-gray-500">Para onde vai?</p>
+                    <h1 className="font-black text-sm">Destino</h1>
+                    <p className="text-xs text-gray-500">Para onde vai?</p>
                   </div>
                 </div>
               </div>
             )}
-          </div>
-          <div className="w-full h-1/2 relative flex justify-content-center">
-            <div className="grid grid-cols-1 gap-0 place-content-center bg-white w-80 md:w-96 h-5/6 rounded-lg text-nowrap">
+            <div className="grid grid-cols-1 gap-0 place-content-center bg-white h-4/6 rounded-lg text-nowrap">
               <div className="flex flex-row justify-center w-full items-center">
                 <div className="flex flex-col items-center w-1/2 m-3">
                   <FaRegCalendarAlt />
@@ -138,12 +136,17 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full h-1/2 relative flex justify-content-center">
-            <div className="grid grid-cols-1 gap-0 place-content-center bg-white w-80 md:w-96 h-5/6 rounded-lg text-nowrap">
+          <div className="absolute grid grid-cols-2 gap-3 left-2/4 h-full w-2/4 pl-3">
+            <div className="grid grid-cols-1 place-content-center bg-white h-4/6 rounded-lg text-nowrap">
               <div className="ml-3 flex flex-row gap-3 items-center">
                 <IoPersonOutline className="" size="20" />
                 <h1 className="font-bold">1 Quarto - 2 Viajantes</h1>
               </div>
+            </div>
+            <div className="h-full">
+              <button className="rounded-lg bg-blue-900 h-4/6 w-full text-nowrap">
+                Buscar Pacotes
+              </button>
             </div>
           </div>
         </div>
