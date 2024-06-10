@@ -1,6 +1,7 @@
 import React from "react";
-import "./Voos.css";
+import "./CardVoos.css";
 import CardVoos from "./CardVoos";
+import { ImAirplane } from "react-icons/im";
 
 const Voos = () => {
   return (
