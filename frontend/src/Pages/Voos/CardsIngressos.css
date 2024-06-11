@@ -1,0 +1,50 @@
+.ticket-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-card.selected {
+    border-color: #51AE89;
+}
+
+.ticket-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.ticket-card p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.ticket-card a {
+    color: #51AE89;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.ticket-card .prices {
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
+.ticket-card .select-button {
+    background-color: #51AE89;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ticket-card .select-button:hover {
+    background-color: #51AE89;
+}

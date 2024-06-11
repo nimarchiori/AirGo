@@ -18,3 +18,45 @@ svg {
 .star{
   width: 900px;
 }
+
+.classificacao {
+  background-color: #9beea9;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.class {
+  padding: 0%;
+  padding-top: 10px;
+  align-items: center;
+}
+.padd {
+  padding: 3px !important;
+}
+
+.oferta {
+  background-color: #C2E6F9;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.paddoferta {
+  padding: 3px !important;
+  padding-top: 10px !important;
+}
+
+.bag {
+  width: 20px;
+}
+
+.colbag {
+  padding-top: 10px;
+}
+
+.text {
+  padding-bottom: 20px;
+}
+
+.top {
+  padding-top: 10px;
+}

@@ -1,0 +1,96 @@
+.ticket-selection {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 600px;
+}
+
+.ticket-selection h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.ticket-selection p {
+    color: #51AE89;
+}
+
+.date-input {
+    margin: 20px 0;
+}
+
+.date-input label {
+    display: flex;
+    align-items: center;
+}
+
+.date-input input[type="date"] {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #51AE89;
+    border-radius: 4px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.counter-item {
+    display: flex;
+    align-items: center;
+}
+
+.counter-item span {
+    margin-right: 10px;
+    font-size: 1em;
+    color: #51AE89;
+}
+
+.counter-item small {
+    display: block;
+    font-size: 0.8em;
+    color: #51AE89;
+}
+
+.counter-item button {
+    padding: 0 10px;
+    border: none;
+    background-color: #51AE89;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.counter-item input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #51AE89;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    color: #51AE89;
+    font-size: 0.9em;
+}
+
+.info i {
+    margin-right: 5px;
+    color: #1e90ff;
+}
+
+.fa-times-circle {
+    color: #ff4500;
+}
